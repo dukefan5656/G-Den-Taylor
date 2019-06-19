@@ -436,22 +436,6 @@ textarea {
 button {
   overflow: visible;
 }
-#your-move{
-  height: 420px !important;
-  width: 800px !important;
-}
-#quiz{
-  height: 420px !important;
-  width: 800px !important;
-}
-#one-stop-shop{
-  height: 420px !important;
-  width: 800px !important;
-}
-#the-lazy-traveler{
-  height: 420px !important;
-  width: 800px !important;
-}
 button,
 select {
   text-transform: none;
@@ -595,7 +579,7 @@ body {
 }
 @media (max-width: 1180px) {
   .l-side-nav {
-    display: none;
+    /* display: none; */
   }
 }
 .l-main-content {
