@@ -1,0 +1,22 @@
+{
+  "name": "g-den-test",
+  "version": "1.0.0",
+  "description": "Global is a modern and sleek website template crafted for professionals in the creative industry. Global can serve as a single page portfolio or be easily modified to serve as the perfect beginning for a hip creative agency.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dukefan5656/global.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dukefan5656/global/issues"
+  },
+  "homepage": "https://github.com/dukefan5656/global#readme",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  }
+}
