@@ -236,19 +236,57 @@ h1 span {
   
 }
 
-.crew{
+.phone-content {
+  margin: 15% auto;
+  display: flex;
+  align-items: center;
+}
+
+.phone-container {
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+/* override jqeury ui styles for phone picker */
+#phone-picker {
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#phone-picker .ui-accordion-content {
+  background-color: transparent;
+}
+
+#phone-picker h3 {
+  background-color: transparent;
+  border: 2px solid #555;
+  opacity: 0.35;
+  color: black;
+}
+
+#phone-picker .ui-state-active {
+  color: #577A54 !important;
+}
+
+#phone-picker > h3 > .ui-icon {
+  /*disappear the bootstrap image since we can't make it the right color*/
+  display: none;
 }
 
 #iphone{
-  height: 70vh;
-  position: absolute;
-  margin-top: 20vh
+  width: 100%;
+  position: relative;
 }
 #gif{
+  width: calc(100% - 2px);
   position: absolute;
-  height: 68vh;
-  border-radius: 15%;
-  margin-top: 20vh;
+  border-radius: 35px;
+  right: 1px;
+  padding-left: 5px;
 }
 
 #unit{

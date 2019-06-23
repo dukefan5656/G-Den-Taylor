@@ -8,7 +8,15 @@
     <meta name="description" content="HTML5 website template" />
     <meta name="keywords" content="global, template, html, sass, jquery" />
     <meta name="author" content="Bucky Maler" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script>
+      $( function() {
+        $( "#phone-picker" ).accordion();
+      } );
+    </script>
   </head>
   <body>
     
@@ -94,30 +102,35 @@
                   <div class="work--lockup">
                     <ul class="slider">
                       <li class="slider--item slider--item-center">
-                        <a href="#0">
-                          <div>
+                        <div class="phone-content">
+                          <div id="phone-picker">
+                            <h3  onclick="$('#gif').attr('src', 'assets/img/gif.gif')">Section 1</h3>
+                            <div>
+                              <p>
+                              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+                              </p>
+                            </div>
+
+                            <h3 onclick="$('#gif').attr('src', 'assets/img/profile_1.jpg')">Section 2</h3>
+                            <div>
+                              <p>
+                              Hi, I'm Chris. Chris Rudder, for short.
+                              </p>
+                            </div>
+
+                          </div>
+                          <div class="phone-container">
                             <img
                               id="gif"
                               src="assets/img/gif.gif"
                             />
-                            <span><img
+                            <img
                               id="iphone"
                               src="assets/img/iphone.png"
                               alt="Quiz App"
                             />
-                          </span>
                           </div>
-                          <div class="portfolio-info-container">
-                            <div class="portfolio-info">
-                          
-                          
                         </div>
-                        <div class="portfolio-info">
-                          
-                          
-                        </div>
-                        </div>
-                        </a>
                       </li>
                     </ul>
                   </div>
@@ -204,16 +217,7 @@
       </div>
       
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
-        );
-    </script>
     <script src="assets/js/functions-min.js"></script>
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="particles.js"></script>
   <script>particlesJS.load('particles-js', '/particles.json', function() {
