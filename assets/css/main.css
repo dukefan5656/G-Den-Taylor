@@ -277,11 +277,12 @@ h1 span {
   display: none;
 }
 
-#iphone{
+#iphone {
   width: 100%;
   position: relative;
 }
-#gif{
+
+#gif {
   width: calc(100% - 2px);
   position: absolute;
   border-radius: 35px;
@@ -289,7 +290,7 @@ h1 span {
   padding-left: 5px;
 }
 
-#unit{
+#unit {
   position: relative;
   height: 95vh;
   margin-left: 40%;
@@ -299,14 +300,90 @@ h1 span {
   animation: showcase 2s ease-in-out infinite;
 }
 
-#about-unit{
+#about-unit {
+  margin-top: 80px;
   position: relative;
-  height: 95vh;
-  width: 120%;
-  margin-left: 80%;
+  margin-left: 50%;
+}
+
+#about-unit img {
+  width: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+span.description, span.description-reverse {
+  white-space: nowrap;
+  position: absolute;
   z-index: 2;
-  overflow: hidden;
-  animation: showcase 2s ease-in-out infinite;
+  left: 0;
+  cursor: pointer;
+}
+
+span.description-reverse {
+  left: initial;
+}
+
+span.description:hover, span.description-reverse:hover {
+  color: #577A54;
+}
+
+span.description:hover:after, span.description-reverse:hover:before {
+  opacity: 1;
+}
+
+span.description::after, span.description-reverse::before {
+  z-index: 10;
+  content: '';
+  display: block;
+  position: absolute;
+  background: #577A54;
+  height: 2px;
+  opacity: .3;
+  top: 50%;
+  left: 100%;
+  transition: background .3s,width .3s;
+  width: 300px;
+}
+
+span.description-reverse::before {
+  top: 50%;
+  transform: translateX(-100%);
+  width: 120px;
+  left: initial;
+}
+
+/* descroption text labels */
+#description-1 {
+  top: 30px;
+}
+
+#description-2 {
+  top: 60px;
+}
+
+#description-3 {
+  top: 200px;
+}
+
+#description-4 {
+  top: 350px;
+}
+
+#description-5 {
+  top: 400px;
+}
+
+#description-5::after {
+  width: 250px;
+}
+
+#description-6 {
+  position: absolute;
+  right: -200px;
+  text-align: right;
+  top: 400px;
 }
 
 #logo {
