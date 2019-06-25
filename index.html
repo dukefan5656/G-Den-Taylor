@@ -16,6 +16,11 @@
       $( function() {
         $( "#phone-picker" ).accordion();
       } );
+     $( function() {
+      	$( document ).tooltip({
+      		tooltipClass: 'tooltip'
+      	});
+      } );
     </script>
   </head>
   <body>
@@ -71,12 +76,27 @@
               	<div class="work--lockup">
                      <div class="about">
                      	<div id="about-unit">
-                     		<span class="description" id="description-1">description 1</span>
-                     		<span class="description" id="description-2">description 2</span>
-                     		<span class="description" id="description-3">description 3</span>
-                     		<span class="description" id="description-4">description 4</span>
-                     		<span class="description" id="description-5">description 5</span>
-                     		<span class="description-reverse" id="description-6">description 6</span>
+                     		<span class="description" title="Here is information about our product" id="description-1">
+                     			Label 1
+                     		</span>
+                     		<span class="description" title="more information" id="description-2">
+                     			Label 2
+                     		</span>
+                     		<span class="description" title="our product wins awards" id="description-3">
+                     			Label 3
+                     		</span>
+                     		<span class="description" title="Nobody beats our product" id="description-4">
+                     			Label 4
+                 			</span>
+                     		<span class="description" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     		consequat."id="description-5">
+                     			Label 5
+                 			</span>
+                     		<span class="description-reverse" title="Our users are happy and productive." id="description-6">
+                     			Label 6
+                 			</span>
                      		<img src="assets/img/01-door-closed-tray.png" alt="Unit">
 						</div>
                   	</div>

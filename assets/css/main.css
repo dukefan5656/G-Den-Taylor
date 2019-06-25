@@ -325,12 +325,17 @@ span.description-reverse {
   left: initial;
 }
 
+.tooltip {
+  color: #577A54;
+  opacity: 0.9;
+}
+
 span.description:hover, span.description-reverse:hover {
   color: #577A54;
 }
 
 span.description:hover:after, span.description-reverse:hover:before {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 span.description::after, span.description-reverse::before {
@@ -376,7 +381,11 @@ span.description-reverse::before {
 }
 
 #description-5::after {
-  width: 250px;
+  width: 300px;
+}
+
+#description-6::before {
+  width: 150px;
 }
 
 #description-6 {
