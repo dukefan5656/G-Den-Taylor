@@ -236,22 +236,61 @@ h1 span {
   
 }
 
-.crew{
+.phone-content {
+  margin: 15% auto;
+  display: flex;
+  align-items: center;
 }
 
-#iphone{
-  height: 70vh;
-  position: absolute;
-  margin-top: 20vh
-}
-#gif{
-  position: absolute;
-  height: 68vh;
-  border-radius: 15%;
-  margin-top: 20vh;
+.phone-container {
+  width: 200px;
+  position: relative;
+  display: inline-block;
 }
 
-#unit{
+/* override jqeury ui styles for phone picker */
+#phone-picker {
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#phone-picker .ui-accordion-content {
+  background-color: transparent;
+}
+
+#phone-picker h3 {
+  background-color: transparent;
+  border: 2px solid #555;
+  opacity: 0.35;
+  color: black;
+}
+
+#phone-picker .ui-state-active {
+  color: #577A54 !important;
+}
+
+#phone-picker > h3 > .ui-icon {
+  /*disappear the bootstrap image since we can't make it the right color*/
+  display: none;
+}
+
+#iphone {
+  width: 100%;
+  position: relative;
+}
+
+#gif {
+  width: calc(100% - 2px);
+  position: absolute;
+  border-radius: 35px;
+  right: 1px;
+  padding-left: 5px;
+}
+
+#unit {
   position: relative;
   height: 95vh;
   margin-left: 40%;
@@ -261,15 +300,106 @@ h1 span {
   animation: showcase 2s ease-in-out infinite;
 }
 
-#about-unit{
+#about-unit {
+  margin-top: 80px;
   position: relative;
+<<<<<<< HEAD
   height: 85vh;
   width: 120%;
   margin-top: 10vh;
   margin-left: 30%;
+=======
+  margin-left: 50%;
+}
+
+#about-unit img {
+  width: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+span.description, span.description-reverse {
+  white-space: nowrap;
+  position: absolute;
+>>>>>>> 78e55f00a984e52d723bab05b413b7b745eb9c10
   z-index: 2;
-  overflow: hidden;
-  animation: showcase 2s ease-in-out infinite;
+  left: 0;
+  cursor: pointer;
+}
+
+span.description-reverse {
+  left: initial;
+}
+
+.tooltip {
+  color: #577A54;
+  opacity: 0.9;
+}
+
+span.description:hover, span.description-reverse:hover {
+  color: #577A54;
+}
+
+span.description:hover:after, span.description-reverse:hover:before {
+  opacity: 0.5;
+}
+
+span.description::after, span.description-reverse::before {
+  z-index: 10;
+  content: '';
+  display: block;
+  position: absolute;
+  background: #577A54;
+  height: 2px;
+  opacity: .3;
+  top: 50%;
+  left: 100%;
+  transition: background .3s,width .3s;
+  width: 300px;
+}
+
+span.description-reverse::before {
+  top: 50%;
+  transform: translateX(-100%);
+  width: 120px;
+  left: initial;
+}
+
+/* descroption text labels */
+#description-1 {
+  top: 30px;
+}
+
+#description-2 {
+  top: 60px;
+}
+
+#description-3 {
+  top: 200px;
+}
+
+#description-4 {
+  top: 350px;
+}
+
+#description-5 {
+  top: 400px;
+}
+
+#description-5::after {
+  width: 300px;
+}
+
+#description-6::before {
+  width: 150px;
+}
+
+#description-6 {
+  position: absolute;
+  right: -200px;
+  text-align: right;
+  top: 400px;
 }
 
 #logo {
