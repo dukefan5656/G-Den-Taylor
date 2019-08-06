@@ -15,7 +15,7 @@
     intervalTime: 3500,
     dotsSnap: false,
     dotsHide: true,
-    radius: 140,
+    radius: 400,
     start: 0,
     slides: []
   };
@@ -538,7 +538,7 @@
    * @param {Object} options
    @param {Boolean} [options.dotsSnap=false] Shows dots when user starts dragging and snap to them.
    @param {Boolean} [options.dotsHide=true] Fades out the dots when user stops dragging.
-   @param {Number}  [options.radius=140] Used to determine the size of the circleslider.
+   @param {Number}  [options.radius=400] Used to determine the size of the circleslider.
    @param {Boolean} [options.interval=false] Move to another block on intervals.
    @param {Number}  [options.intervalTime=intervalTime] Interval time in milliseconds.
    @param {Number}  [options.start=0] The slide to start with.
@@ -868,7 +868,7 @@ $(document).ready(function() {
   });
   $("#rotatescroll").tinycircleslider({
     dotsSnap: true,
-    radius: radius,
+    radius: 800,
     dotsHide: false,
     slides: ["CEO", "CTO", "CFO", "POO", "COO", "Engineer", "Engineer", "Grow Specialist"],
     interval: false
